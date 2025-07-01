@@ -1,0 +1,12 @@
+def rev_arr(arr):
+    a = 0
+    b = len(arr)-1
+    while b > a:
+        arr[a],arr[b] = arr[b],arr[a]
+        a += 1
+        b -= 1
+    return arr
+
+print(rev_arr([9,8,7,6,5,4,3,2,1]))
+        
+        
