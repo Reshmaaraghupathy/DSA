@@ -1,0 +1,14 @@
+def find_max(arr):
+    maxi_element = 0
+    for i in range(len(arr)):
+        if maxi_element < arr[i]:
+            maxi_element = arr[i]
+    return maxi_element
+def find_min(arr):
+    min_element = arr[0]
+    for i in range(len(arr)):
+        if min_element > arr[i]:
+            min_element = arr[i]
+    return min_element
+print("The largest element of given array is: ",find_max([2,4,5,6]))
+print("The smallest element of given array is: ",find_min([2,4,5,6]))
