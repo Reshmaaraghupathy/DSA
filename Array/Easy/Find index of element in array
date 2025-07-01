@@ -1,0 +1,8 @@
+def find_index(arr, num):
+    for i in range(len(arr)):
+        if num == arr[i]:
+            return i
+arr = [2,4,56,6]
+num = 56
+result = find_index(arr,num)
+print(f"The index of is {num} in {arr} is: ",result)
