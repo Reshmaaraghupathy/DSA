@@ -1,0 +1,6 @@
+def sum_of_ele(arr):
+    total = 0
+    for i in range(len(arr)):
+        total += arr[i]
+    return total
+print(sum_of_ele([1,2,3,4]))
