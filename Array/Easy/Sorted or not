@@ -1,0 +1,18 @@
+def check_sorted(arr):
+    ascending = True
+    descending = True
+
+    for i in range(len(arr) - 1):
+        if arr[i] > arr[i + 1]:
+            ascending = False
+        if arr[i] < arr[i + 1]:
+            descending = False
+
+    if ascending:
+        return "It is sorted in ascending order"
+    elif descending:
+        return "It is sorted in descending order"
+    else:
+        return "It is not sorted"
+
+print(check_sorted([1, 2, 3]))       
