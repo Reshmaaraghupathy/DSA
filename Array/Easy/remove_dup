@@ -1,0 +1,18 @@
+def remove_dup(arr):
+    a = 0
+    b = 1
+    new_arr = []
+    while b <= len(arr):
+        if arr[a] == arr[b]:
+            new_arr.append(arr[a])
+            b += 2
+            a += 2
+        else:
+            new_arr.append(arr[a])
+            b += 1
+            a += 1
+    return new_arr
+
+print(remove_dup([1,1,2,3,3,4]))
+            
+        
