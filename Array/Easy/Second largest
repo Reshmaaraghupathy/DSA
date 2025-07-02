@@ -1,0 +1,11 @@
+def second_large(arr):
+    large = 0
+    sec_large = 0
+    for i in range(len(arr)):
+        if arr[i] > large:
+            sec_large = large
+            large = arr[i]
+    return sec_large
+print(second_large([4,5,9,3,11]))
+        
+        
