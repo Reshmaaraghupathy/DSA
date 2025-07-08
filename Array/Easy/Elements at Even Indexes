@@ -1,0 +1,9 @@
+def Elements_at_Even_Indexes(arr):
+    dumy = []
+    for i in range(len(arr)):
+        if i%2 == 0:
+            dumy.append(arr[i])
+    return dumy
+
+print(Elements_at_Even_Indexes([2,4,5,6,7]))
+            
