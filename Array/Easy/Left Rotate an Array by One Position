@@ -1,0 +1,7 @@
+arr = [0,1,2,3]
+emp_arr = [0]*len(arr)
+i = 0
+while i <= len(arr)-1:
+    emp_arr[(i-2)%len(arr)] = arr[i]
+    i+=1
+print(emp_arr)
